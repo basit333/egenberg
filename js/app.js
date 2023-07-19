@@ -69,8 +69,8 @@ videoPlayBtn.addEventListener("click", () => {
   setTimeout(() => {
     // videoOverlayImg.style.display = "none";
     videoPlayBtn.style.display = "none";
-    videoPlayer.controls = true; // Show video controls
-    videoPlayer.play(); // Play the video
+    videoPlayer.controls = true;
+    videoPlayer.play();
   }, 500);
 });
 
