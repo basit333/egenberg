@@ -61,18 +61,19 @@ const videoPlayer = document.querySelector(".video__player");
 
 // Hide video controls by default
 videoPlayer.controls = false;
+if (videoPlayBtn) {
+  videoPlayBtn.addEventListener("click", () => {
+    // videoOverlayImg.classList.add("video__overlay--img-hidden");
+    videoPlayBtn.classList.add("video__play--btn-hidden");
 
-videoPlayBtn.addEventListener("click", () => {
-  // videoOverlayImg.classList.add("video__overlay--img-hidden");
-  videoPlayBtn.classList.add("video__play--btn-hidden");
-
-  setTimeout(() => {
-    // videoOverlayImg.style.display = "none";
-    videoPlayBtn.style.display = "none";
-    videoPlayer.controls = true;
-    videoPlayer.play();
-  }, 500);
-});
+    setTimeout(() => {
+      // videoOverlayImg.style.display = "none";
+      videoPlayBtn.style.display = "none";
+      videoPlayer.controls = true;
+      videoPlayer.play();
+    }, 500);
+  });
+}
 
 /*
 ---------------------------------------
@@ -86,26 +87,46 @@ const faqPlusIcons = document.querySelectorAll(".faq-plus-icon");
 const faqMinusIcons = document.querySelectorAll(".faq-minus-icon");
 
 // Add event listeners to question wrappers
-faqQuestionWrappers.forEach((questionWrapper, index) => {
-  questionWrapper.addEventListener("click", () => {
-    // Remove "faq__answer--wrapper-open" class from all answer wrappers
-    faqAnswerWrappers.forEach((answerWrapper, i) => {
-      if (i !== index) {
-        answerWrapper.classList.remove("faq__answer--wrapper-open");
-      }
-    });
+if (faqQuestionWrappers) {
+  faqQuestionWrappers.forEach((questionWrapper, index) => {
+    questionWrapper.addEventListener("click", () => {
+      // Remove "faq__answer--wrapper-open" class from all answer wrappers
+      faqAnswerWrappers.forEach((answerWrapper, i) => {
+        if (i !== index) {
+          answerWrapper.classList.remove("faq__answer--wrapper-open");
+        }
+      });
 
-    // Toggle visibility of the corresponding answer wrapper
-    faqAnswerWrappers[index].classList.toggle("faq__answer--wrapper-open");
-    const isOpen = faqAnswerWrappers[index].classList.contains("faq__answer--wrapper-open");
+      // Toggle visibility of the corresponding answer wrapper
+      faqAnswerWrappers[index].classList.toggle("faq__answer--wrapper-open");
+      const isOpen = faqAnswerWrappers[index].classList.contains("faq__answer--wrapper-open");
 
-    // Toggle classes of plus and minus icons
-    faqPlusIcons.forEach((plusIcon, i) => {
-      plusIcon.style.display = i === index && isOpen ? "none" : "block";
-    });
+      // Toggle classes of plus and minus icons
+      faqPlusIcons.forEach((plusIcon, i) => {
+        plusIcon.style.display = i === index && isOpen ? "none" : "block";
+      });
 
-    faqMinusIcons.forEach((minusIcon, i) => {
-      minusIcon.style.display = i === index && isOpen ? "block" : "none";
+      faqMinusIcons.forEach((minusIcon, i) => {
+        minusIcon.style.display = i === index && isOpen ? "block" : "none";
+      });
     });
   });
+}
+
+/*
+---------------------------------------
+            SLider Clients
+---------------------------------------
+*/
+var swiper = new Swiper(".clientSlider", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination.client-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next.client-btn-next",
+    prevEl: ".swiper-button-prev.client-btn-prev",
+  },
 });
