@@ -115,7 +115,7 @@ if (faqQuestionWrappers) {
 
 /*
 ---------------------------------------
-            SLider Clients
+            Slider Clients
 ---------------------------------------
 */
 var swiper = new Swiper(".clientSlider", {
