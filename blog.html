@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egenberg</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Fonts -->
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- OpenSans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Cinzel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bellefair -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+
+
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+    <nav class="nav__bar nav__bar--with-bg">
+      <a href="#" class="nav__bar--logo-box">
+        <img src="./images/site-logo.png" alt="logo">
+      </a>
+      <div class="nav__bar--links-container">
+        <a href="#" class="nav__bar--link">HOME</a>
+        <a href="#" class="nav__bar--link">PRACTICE AREAS</a>
+        <a href="#" class="nav__bar--link">OUR FIRM</a>
+        <a href="#" class="nav__bar--link">BLOG</a>
+      </div>
+      <div class="nav__bar--contact-container">
+        <a href="#" class="nav__bar--contact-btn">Contact us</a>
+        <div class="nav__bar--contact-content">
+          <div class="nav__bar--contact-phone-img-box">
+            <img src="./images/contact-phone.png" alt="phone icon">
+          </div>
+          <div class="nav__bar--contact-info">
+            <p class="nav__bar--contact-text">CALL US TODAY!</p>
+            <p class="nav__bar--contact-number">(504) 229-5700</p>
+          </div>
+        </div>
+      </div>
+      <button class="nav__bar--hamburger-btn">
+        <img src="./images/icon-open.png" alt="">
+      </button>
+    </nav>
+
+    <!-- Mobile Navbar -->
+    <nav class="mobile__navbar">
+      <div class="mobile__navbar--links-container">
+        <a href="#" class="mobile__navbar--link">HOME</a>
+        <a href="#" class="mobile__navbar--link">PRACTICE AREAS</a>
+        <a href="#" class="mobile__navbar--link">OUR FIRM</a>
+        <a href="#" class="mobile__navbar--link">BLOG</a>
+      </div>
+
+      <div class="mobile__navbar--contact-box">
+        <p class="mobile__navbar--contact-text">CALL US TODAY!</p>
+        <p class="mobile__navbar--contact-number">(504) 229-5700</p>
+        <a href="#" class="mobile__navbar--contact-btn">Contact us</a>
+      </div>
+
+      <button class="mobile__navbar--close-btn">
+        <img src="./images/icon-close.png" alt="">
+      </button>
+    </nav>
+
+    <!-- Section Blog Header -->
+    <section class="blog__header">
+      <div class="blog__header--container">
+        <h1 class="blog__header--container-title">
+          If you hurt
+          <span>
+            my clients
+          </span>
+          you'll pay for it
+        </h1>
+        <a href="./contact.html" class="blog__header--container-btn">
+          Get a Free Consultation
+        </a>
+      </div>
+    </section>
+
+    <!-- Section Blog -->
+    <section class="blog">
+
+      <div class="blog__container">
+        <div class="blog__container--top-wrapper">
+
+          <h2 class="blog__container--title">
+            Recent News
+          </h2>
+
+          <div class="container__dropdown--category">
+            <div class="select-dropdown">
+              <button role="button" data-value="" class="select-dropdown__button">
+                Categories
+              </button>
+              <ul class="select-dropdown__list">
+
+                <li data-value="1" class="select-dropdown__list-item">
+                  <a href="#">
+                    <span>CAR ACCIDENTS</span>
+                    <span>(0)</span>
+                  </a>
+                </li>
+
+                <li data-value="2" class="select-dropdown__list-item">
+                  <a href="#">
+                    <span>CAR INSURANCE</span>
+                    <span>(0)</span>
+                  </a>
+                </li>
+
+                <li data-value="3" class="select-dropdown__list-item">
+                  <a href="#">
+                    <span>DRUNK DRIVING</span>
+                    <span>(0)</span>
+                  </a>
+                </li>
+
+                <li data-value="4" class="select-dropdown__list-item">
+                  <a href="#">
+                    <span>PERSONAL INJURIES</span>
+                    <span>(0)</span>
+                  </a>
+                </li>
+
+                <li data-value="5" class="select-dropdown__list-item">
+                  <a href="#">
+                    <span>RIDESHARE ACCIDENTS</span>
+                    <span>(0)</span>
+                  </a>
+                </li>
+
+                <li data-value="6" class="select-dropdown__list-item">
+                  <a href="#">
+                    <span>SAFETY TIPS</span>
+                    <span>(0)</span>
+                  </a>
+                </li>
+
+                <li data-value="7" class="select-dropdown__list-item">
+                  <a href="#">
+                    <span>SLIP AND FALL</span>
+                    <span>(0)</span>
+                  </a>
+                </li>
+
+                <li data-value="8" class="select-dropdown__list-item">
+                  <a href="#">
+                    <span>SWIMMING POOL ACCIDENTS</span>
+                    <span>(0)</span>
+                  </a>
+                </li>
+
+                <li data-value="9" class="select-dropdown__list-item">
+                  <a href="#">
+                    <span>TRUCK ACCIDENTS</span>
+                    <span>(0)</span>
+                  </a>
+                </li>
+
+                <li data-value="10" class="select-dropdown__list-item">
+                  <a href="#">
+                    <span>UNCATEGORIZED</span>
+                    <span>(0)</span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="blog__card--wrapper">
+
+          <div class="blog__card">
+            <div class="blog__card--header">
+              <div class="blog__card--date-box">
+                <p class="blog__card--date">18 sep</p>
+              </div>
+              <div class="blog__card--header-content">
+                <a href="./single-blog.html" class="blog__card--title">
+                  Oil Rig Accident FAQ
+                </a>
+
+                <div class="blog__card--profile-wrapper">
+                  <div class="blog__card--profile">
+                    <img src="./images/blog-person.png" alt="person">
+                    <h3>Lorem</h3>
+                  </div>
+                  <div class="blog__card--comment-box">
+                    <img src="./images/blog-comment.png" alt="comments">
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog__card--body">
+              <div class="blog__card--body-img-box">
+                <img src="./images/blog-post-img.jpg" alt="">
+              </div>
+              <div class="blog__card--body-text-wrapper">
+                <p class="blog__card--body-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed illo quibusdam velit impedit
+                  corporis cupiditate deleniti alias molestiae non, itaque commodi ea atque odio magni nemo nobis
+                  recusandae
+                  aut ab excepturi, maxime placeat? Iste blanditiis quidem repudiandae voluptatem id quos at suscipit,
+                  nostrum cupiditate nulla rerum repellendus autem accusantium.
+                </p>
+                <a href="./single-blog.html" class="blog__card--readmore-btn">
+                  Continue Reading...
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="blog__card">
+            <div class="blog__card--header">
+              <div class="blog__card--date-box">
+                <p class="blog__card--date">18 sep</p>
+              </div>
+              <div class="blog__card--header-content">
+                <a href="./single-blog.html" class="blog__card--title">
+                  Oil Rig Accident FAQ
+                </a>
+
+                <div class="blog__card--profile-wrapper">
+                  <div class="blog__card--profile">
+                    <img src="./images/blog-person.png" alt="person">
+                    <h3>Lorem</h3>
+                  </div>
+                  <div class="blog__card--comment-box">
+                    <img src="./images/blog-comment.png" alt="comments">
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog__card--body">
+              <div class="blog__card--body-img-box">
+                <img src="./images/blog-post-img.jpg" alt="">
+              </div>
+              <div class="blog__card--body-text-wrapper">
+                <p class="blog__card--body-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed illo quibusdam velit impedit
+                  corporis cupiditate deleniti alias molestiae non, itaque commodi ea atque odio magni nemo nobis
+                  recusandae
+                  aut ab excepturi, maxime placeat? Iste blanditiis quidem repudiandae voluptatem id quos at suscipit,
+                  nostrum cupiditate nulla rerum repellendus autem accusantium.
+                </p>
+                <a href="./single-blog.html" class="blog__card--readmore-btn">
+                  Continue Reading...
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="blog__card">
+            <div class="blog__card--header">
+              <div class="blog__card--date-box">
+                <p class="blog__card--date">18 sep</p>
+              </div>
+              <div class="blog__card--header-content">
+                <a href="./single-blog.html" class="blog__card--title">
+                  Oil Rig Accident FAQ
+                </a>
+
+                <div class="blog__card--profile-wrapper">
+                  <div class="blog__card--profile">
+                    <img src="./images/blog-person.png" alt="person">
+                    <h3>Lorem</h3>
+                  </div>
+                  <div class="blog__card--comment-box">
+                    <img src="./images/blog-comment.png" alt="comments">
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog__card--body">
+              <div class="blog__card--body-img-box">
+                <img src="./images/blog-post-img.jpg" alt="">
+              </div>
+              <div class="blog__card--body-text-wrapper">
+                <p class="blog__card--body-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed illo quibusdam velit impedit
+                  corporis cupiditate deleniti alias molestiae non, itaque commodi ea atque odio magni nemo nobis
+                  recusandae
+                  aut ab excepturi, maxime placeat? Iste blanditiis quidem repudiandae voluptatem id quos at suscipit,
+                  nostrum cupiditate nulla rerum repellendus autem accusantium.
+                </p>
+                <a href="./single-blog.html" class="blog__card--readmore-btn">
+                  Continue Reading...
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="blog__card">
+            <div class="blog__card--header">
+              <div class="blog__card--date-box">
+                <p class="blog__card--date">18 sep</p>
+              </div>
+              <div class="blog__card--header-content">
+                <a href="./single-blog.html" class="blog__card--title">
+                  Oil Rig Accident FAQ
+                </a>
+
+                <div class="blog__card--profile-wrapper">
+                  <div class="blog__card--profile">
+                    <img src="./images/blog-person.png" alt="person">
+                    <h3>Lorem</h3>
+                  </div>
+                  <div class="blog__card--comment-box">
+                    <img src="./images/blog-comment.png" alt="comments">
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog__card--body">
+              <div class="blog__card--body-img-box">
+                <img src="./images/blog-post-img.jpg" alt="">
+              </div>
+              <div class="blog__card--body-text-wrapper">
+                <p class="blog__card--body-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed illo quibusdam velit impedit
+                  corporis cupiditate deleniti alias molestiae non, itaque commodi ea atque odio magni nemo nobis
+                  recusandae
+                  aut ab excepturi, maxime placeat? Iste blanditiis quidem repudiandae voluptatem id quos at suscipit,
+                  nostrum cupiditate nulla rerum repellendus autem accusantium.
+                </p>
+                <a href="./single-blog.html" class="blog__card--readmore-btn">
+                  Continue Reading...
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="blog__card">
+            <div class="blog__card--header">
+              <div class="blog__card--date-box">
+                <p class="blog__card--date">18 sep</p>
+              </div>
+              <div class="blog__card--header-content">
+                <a href="./single-blog.html" class="blog__card--title">
+                  Oil Rig Accident FAQ
+                </a>
+
+                <div class="blog__card--profile-wrapper">
+                  <div class="blog__card--profile">
+                    <img src="./images/blog-person.png" alt="person">
+                    <h3>Lorem</h3>
+                  </div>
+                  <div class="blog__card--comment-box">
+                    <img src="./images/blog-comment.png" alt="comments">
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog__card--body">
+              <div class="blog__card--body-img-box">
+                <img src="./images/blog-post-img.jpg" alt="">
+              </div>
+              <div class="blog__card--body-text-wrapper">
+                <p class="blog__card--body-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed illo quibusdam velit impedit
+                  corporis cupiditate deleniti alias molestiae non, itaque commodi ea atque odio magni nemo nobis
+                  recusandae
+                  aut ab excepturi, maxime placeat? Iste blanditiis quidem repudiandae voluptatem id quos at suscipit,
+                  nostrum cupiditate nulla rerum repellendus autem accusantium.
+                </p>
+                <a href="./single-blog.html" class="blog__card--readmore-btn">
+                  Continue Reading...
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="blog__card">
+            <div class="blog__card--header">
+              <div class="blog__card--date-box">
+                <p class="blog__card--date">18 sep</p>
+              </div>
+              <div class="blog__card--header-content">
+                <a href="./single-blog.html" class="blog__card--title">
+                  Oil Rig Accident FAQ
+                </a>
+
+                <div class="blog__card--profile-wrapper">
+                  <div class="blog__card--profile">
+                    <img src="./images/blog-person.png" alt="person">
+                    <h3>Lorem</h3>
+                  </div>
+                  <div class="blog__card--comment-box">
+                    <img src="./images/blog-comment.png" alt="comments">
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog__card--body">
+              <div class="blog__card--body-img-box">
+                <img src="./images/blog-post-img.jpg" alt="">
+              </div>
+              <div class="blog__card--body-text-wrapper">
+                <p class="blog__card--body-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed illo quibusdam velit impedit
+                  corporis cupiditate deleniti alias molestiae non, itaque commodi ea atque odio magni nemo nobis
+                  recusandae
+                  aut ab excepturi, maxime placeat? Iste blanditiis quidem repudiandae voluptatem id quos at suscipit,
+                  nostrum cupiditate nulla rerum repellendus autem accusantium.
+                </p>
+                <a href="./single-blog.html" class="blog__card--readmore-btn">
+                  Continue Reading...
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="blog__card">
+            <div class="blog__card--header">
+              <div class="blog__card--date-box">
+                <p class="blog__card--date">18 sep</p>
+              </div>
+              <div class="blog__card--header-content">
+                <a href="./single-blog.html" class="blog__card--title">
+                  Oil Rig Accident FAQ
+                </a>
+
+                <div class="blog__card--profile-wrapper">
+                  <div class="blog__card--profile">
+                    <img src="./images/blog-person.png" alt="person">
+                    <h3>Lorem</h3>
+                  </div>
+                  <div class="blog__card--comment-box">
+                    <img src="./images/blog-comment.png" alt="comments">
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog__card--body">
+              <div class="blog__card--body-img-box">
+                <img src="./images/blog-post-img.jpg" alt="">
+              </div>
+              <div class="blog__card--body-text-wrapper">
+                <p class="blog__card--body-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed illo quibusdam velit impedit
+                  corporis cupiditate deleniti alias molestiae non, itaque commodi ea atque odio magni nemo nobis
+                  recusandae
+                  aut ab excepturi, maxime placeat? Iste blanditiis quidem repudiandae voluptatem id quos at suscipit,
+                  nostrum cupiditate nulla rerum repellendus autem accusantium.
+                </p>
+                <a href="./single-blog.html" class="blog__card--readmore-btn">
+                  Continue Reading...
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="blog__card">
+            <div class="blog__card--header">
+              <div class="blog__card--date-box">
+                <p class="blog__card--date">18 sep</p>
+              </div>
+              <div class="blog__card--header-content">
+                <a href="./single-blog.html" class="blog__card--title">
+                  Oil Rig Accident FAQ
+                </a>
+
+                <div class="blog__card--profile-wrapper">
+                  <div class="blog__card--profile">
+                    <img src="./images/blog-person.png" alt="person">
+                    <h3>Lorem</h3>
+                  </div>
+                  <div class="blog__card--comment-box">
+                    <img src="./images/blog-comment.png" alt="comments">
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog__card--body">
+              <div class="blog__card--body-img-box">
+                <img src="./images/blog-post-img.jpg" alt="">
+              </div>
+              <div class="blog__card--body-text-wrapper">
+                <p class="blog__card--body-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed illo quibusdam velit impedit
+                  corporis cupiditate deleniti alias molestiae non, itaque commodi ea atque odio magni nemo nobis
+                  recusandae
+                  aut ab excepturi, maxime placeat? Iste blanditiis quidem repudiandae voluptatem id quos at suscipit,
+                  nostrum cupiditate nulla rerum repellendus autem accusantium.
+                </p>
+                <a href="./single-blog.html" class="blog__card--readmore-btn">
+                  Continue Reading...
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="blog__card">
+            <div class="blog__card--header">
+              <div class="blog__card--date-box">
+                <p class="blog__card--date">18 sep</p>
+              </div>
+              <div class="blog__card--header-content">
+                <a href="./single-blog.html" class="blog__card--title">
+                  Oil Rig Accident FAQ
+                </a>
+
+                <div class="blog__card--profile-wrapper">
+                  <div class="blog__card--profile">
+                    <img src="./images/blog-person.png" alt="person">
+                    <h3>Lorem</h3>
+                  </div>
+                  <div class="blog__card--comment-box">
+                    <img src="./images/blog-comment.png" alt="comments">
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog__card--body">
+              <div class="blog__card--body-img-box">
+                <img src="./images/blog-post-img.jpg" alt="">
+              </div>
+              <div class="blog__card--body-text-wrapper">
+                <p class="blog__card--body-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed illo quibusdam velit impedit
+                  corporis cupiditate deleniti alias molestiae non, itaque commodi ea atque odio magni nemo nobis
+                  recusandae
+                  aut ab excepturi, maxime placeat? Iste blanditiis quidem repudiandae voluptatem id quos at suscipit,
+                  nostrum cupiditate nulla rerum repellendus autem accusantium.
+                </p>
+                <a href="./single-blog.html" class="blog__card--readmore-btn">
+                  Continue Reading...
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+      <div class="footer__main--container footer__main--contact-us">
+
+        <div class="footer__main--logo-box">
+          <img class="footer__logo" src="./images/site-logo.png" alt="">
+          <p class="footer__main--logo-text">
+            Quis autem vel eum iure reprehenderit aui
+            ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem.
+          </p>
+          <div class="footer__main--logo-social">
+            <a href="#" class="footer__main--logo-social-icon-box">
+              <img src="./images/icon-facebook.png" alt="">
+            </a>
+            <a href="#" class="footer__main--logo-social-icon-box">
+              <img src="./images/icon-twitter.png" alt="">
+            </a>
+            <a href="#" class="footer__main--logo-social-icon-box">
+              <img src="./images/icon-instagram.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__main--useful-links">
+          <h2 class="footer__main--useful-links-title">
+            USEFUL LINKS
+          </h2>
+          <div class="footer__main--useful-links-box">
+
+            <a href="#" class="footer__main--useful-link-item">
+              <img src="./images/footer-link-img.png" alt="">
+              <span>Home</span>
+            </a>
+
+            <a href="#" class="footer__main--useful-link-item">
+              <img src="./images/footer-link-img.png" alt="">
+              <span>About Us</span>
+            </a>
+
+            <a href="#" class="footer__main--useful-link-item">
+              <img src="./images/footer-link-img.png" alt="">
+              <span>Practice Areas </span>
+            </a>
+
+            <a href="#" class="footer__main--useful-link-item">
+              <img src="./images/footer-link-img.png" alt="">
+              <span>News</span>
+            </a>
+
+            <a href="#" class="footer__main--useful-link-item">
+              <img src="./images/footer-link-img.png" alt="">
+              <span>Blog</span>
+            </a>
+
+            <a href="#" class="footer__main--useful-link-item">
+              <img src="./images/footer-link-img.png" alt="">
+              <span>Contact Us</span>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="footer__main--office-info">
+          <h2 class="footer__main--office-title">
+            OFFICE INFO
+          </h2>
+          <div class="footer__main--office-item">
+            <img src="./images/icon-phone.png" alt="">
+            <p>(504) 229-5700</p>
+          </div>
+          <div class="footer__main--office-item">
+            <img src="./images/icon-email.png" alt="">
+            <p>Info@EGENBERGTRIALLAWYERS.com</p>
+          </div>
+          <div class="footer__main--office-item">
+            <img src="./images/icon-location.png" alt="">
+            <p>
+              650 Poydras Street Suite 2000 New Orleans, LA 70130
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__main--subscribe">
+          <h2 class="footer__main--subscribe-title">
+            SUBSCRIBE NOW
+          </h2>
+          <form action="#">
+            <input class="footer__main--subscribe-input" type="email" name="email" id="email"
+              placeholder="Enter Email Address">
+            <button type="submit" class="footer__main--subscribe-btn">
+              <span>SUBSCRIBE NOW</span>
+              <img src="./images/Right-Arrow-White.png" alt="">
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer__main--bottom">
+        <div class="footer__main--bottom-wrapper">
+          <p class="footer__main--bottom-copy-write">
+            © Egenberg, APLC
+          </p>
+          <div class="footer__main--bottom-links">
+            <a href="#" class="footer__main--bottom-links">
+              Disclaimer
+            </a>
+            <a href="#" class="footer__main--bottom-links">
+              Site Map
+            </a>
+            <a href="#" class="footer__main--bottom-links">
+              Privacy Policy
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="./js/app.js"></script>
+  </body>
+
+</html>

@@ -25,29 +25,32 @@ if (navCloseBtn) {
             Grid Slider
 ---------------------------------------
 */
-new Swiper(".mySwiperGrid", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  grabCursor: true,
-  grid: {
-    rows: 2,
-    fill: "row",
-  },
-  pagination: {
-    el: ".swiper-pagination.swiper-grid-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 10,
+
+if (typeof Swiper !== "undefined") {
+  new Swiper(".mySwiperGrid", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    grabCursor: true,
+    grid: {
+      rows: 2,
+      fill: "row",
     },
-    1024: {
-      slidesPerView: 2,
-      spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination.swiper-grid-pagination",
+      clickable: true,
     },
-  },
-});
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+    },
+  });
+}
 
 /*
 ---------------------------------------
@@ -60,7 +63,10 @@ const videoPlayBtn = document.querySelector(".video__play--btn");
 const videoPlayer = document.querySelector(".video__player");
 
 // Hide video controls by default
-videoPlayer.controls = false;
+if (videoPlayer) {
+  videoPlayer.controls = false;
+}
+
 if (videoPlayBtn) {
   videoPlayBtn.addEventListener("click", () => {
     // videoOverlayImg.classList.add("video__overlay--img-hidden");
@@ -118,15 +124,47 @@ if (faqQuestionWrappers) {
             Slider Clients
 ---------------------------------------
 */
-var swiper = new Swiper(".clientSlider", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  grabCursor: true,
-  pagination: {
-    el: ".swiper-pagination.client-pagination",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next.client-btn-next",
-    prevEl: ".swiper-button-prev.client-btn-prev",
-  },
+if (typeof Swiper !== "undefined") {
+  var swiper = new Swiper(".clientSlider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination.client-pagination",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next.client-btn-next",
+      prevEl: ".swiper-button-prev.client-btn-prev",
+    },
+  });
+}
+/*
+---------------------------------------
+            Blog Category
+---------------------------------------
+*/
+// Get the elements using document.querySelector or document.querySelectorAll
+const selectButton = document.querySelector(".select-dropdown__button");
+const selectListItems = document.querySelectorAll(".select-dropdown__list-item");
+const selectList = document.querySelector(".select-dropdown__list");
+
+// Attach click event listener to the select button
+selectButton.addEventListener("click", function () {
+  selectList.classList.toggle("active");
+});
+
+// Attach click event listeners to each select list item
+selectListItems.forEach(function (item) {
+  item.addEventListener("click", function () {
+    const itemValue = item.dataset.value;
+    console.log(itemValue);
+
+    // Update the button text and data-value attribute
+    const selectButtonText = selectButton;
+    selectButtonText.textContent = item.textContent;
+    selectButton.setAttribute("data-value", itemValue);
+
+    // Hide the select list
+    selectList.classList.toggle("active");
+  });
 });
